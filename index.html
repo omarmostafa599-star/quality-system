@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة التحكم الرئيسية - نظام مشكلات جودة المنتجات</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Cairo', sans-serif; background: linear-gradient(180deg, #fff0f5 0%, #fff8fb 55%, #ffffff 100%); }
+    .glass-card { background: rgba(255,255,255,0.88); backdrop-filter: blur(10px); border: 1px solid rgba(244,114,182,0.25); border-radius: 1.25rem; box-shadow: 0 14px 40px rgba(190,24,93,0.10); }
+    .soft-card { background: white; border: 1px solid #fbcfe8; border-radius: 1.25rem; box-shadow: 0 12px 30px rgba(190,24,93,0.08); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    .soft-card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(190,24,93,0.12); border-color: #f9a8d4; }
+    .status-dot { width: 10px; height: 10px; border-radius: 999px; display: inline-block; flex: 0 0 auto; }
+    .hero-bg { background: radial-gradient(circle at top right, rgba(244,114,182,.22), transparent 28%), radial-gradient(circle at bottom left, rgba(236,72,153,.18), transparent 25%), linear-gradient(135deg, #be185d 0%, #db2777 45%, #ec4899 100%); }
+    .btn-primary { background: linear-gradient(135deg, #be185d 0%, #db2777 100%); color: white; }
+    .btn-primary:hover { filter: brightness(1.03); box-shadow: 0 10px 24px rgba(190,24,93,.22); }
+    .module-icon { width: 56px; height: 56px; border-radius: 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; background: linear-gradient(135deg, #fff1f7 0%, #fde7f1 100%); border: 1px solid #fbcfe8; }
+  </style>
+</head>
+<body class="text-gray-700 min-h-screen pb-10">
+  <main class="max-w-7xl mx-auto px-4 pt-6 space-y-6">
+    <section class="hero-bg rounded-[1.75rem] shadow-2xl overflow-hidden text-white">
+      <div class="px-6 py-8 md:px-8 md:py-10">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+          <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-2 text-sm font-bold mb-4">
+              <span class="status-dot bg-emerald-300"></span>
+              <span>نقطة الدخول الرئيسية للنظام</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">لوحة التحكم الرئيسية<span class="block mt-2 text-pink-100 text-2xl md:text-3xl">لنظام مشكلات جودة المنتجات</span></h1>
+            <p class="mt-4 text-pink-50 text-sm md:text-base font-semibold leading-8 max-w-2xl">من هذه الواجهة يمكنك فتح جميع الصفحات الأساسية للنظام: فورم الإدخال، صفحة المتابعة، التقرير الشهري، واللوحة التنفيذية، بحيث تكون هي الشاشة الرئيسية التي تبدأ منها العمل.</p>
+          </div>
+          <div class="glass-card text-gray-800 p-5 min-w-[280px] w-full lg:w-auto">
+            <div class="text-sm text-gray-500 font-bold">محتويات النظام</div>
+            <div class="mt-3 grid grid-cols-2 gap-3 text-sm font-bold">
+              <div class="bg-pink-50 border border-pink-100 rounded-xl p-3 text-center">فورم الإدخال</div>
+              <div class="bg-pink-50 border border-pink-100 rounded-xl p-3 text-center">المتابعة</div>
+              <div class="bg-pink-50 border border-pink-100 rounded-xl p-3 text-center">التقرير الشهري</div>
+              <div class="bg-pink-50 border border-pink-100 rounded-xl p-3 text-center">Dashboard</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+      <article class="soft-card p-5 flex flex-col"><div class="flex items-start justify-between gap-3"><div class="module-icon">📝</div><span class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-3 py-1 text-xs font-extrabold"><span class="status-dot bg-blue-500"></span>إدخال</span></div><h2 class="mt-4 text-xl font-extrabold text-pink-800">فورم إدخال المشكلة</h2><p class="mt-3 text-sm leading-7 text-gray-600 flex-grow">تسجيل المشكلة، سحب اسم الصنف والفئة تلقائيًا من كود الصنف، رفع الصور، ثم حفظ الحالة داخل الشيت.</p><div class="mt-5 flex gap-3"><a href="PQ_Issue_Form.html" target="_blank" class="flex-1 text-center px-4 py-3 rounded-xl btn-primary font-extrabold">فتح الصفحة</a></div></article>
+      <article class="soft-card p-5 flex flex-col"><div class="flex items-start justify-between gap-3"><div class="module-icon">📋</div><span class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 border border-orange-100 rounded-full px-3 py-1 text-xs font-extrabold"><span class="status-dot bg-orange-500"></span>متابعة</span></div><h2 class="mt-4 text-xl font-extrabold text-pink-800">Tracker / المتابعة</h2><p class="mt-3 text-sm leading-7 text-gray-600 flex-grow">عرض السجلات، البحث والفلترة، الصور المصغرة، وتحديث حالة المتابعة والإجراءات المنفذة من نفس الصفحة.</p><div class="mt-5 flex gap-3"><a href="PQ_Issue_Tracker.html" target="_blank" class="flex-1 text-center px-4 py-3 rounded-xl btn-primary font-extrabold">فتح الصفحة</a></div></article>
+      <article class="soft-card p-5 flex flex-col"><div class="flex items-start justify-between gap-3"><div class="module-icon">📅</div><span class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-100 rounded-full px-3 py-1 text-xs font-extrabold"><span class="status-dot bg-emerald-500"></span>تقارير</span></div><h2 class="mt-4 text-xl font-extrabold text-pink-800">التقرير الشهري</h2><p class="mt-3 text-sm leading-7 text-gray-600 flex-grow">تقرير إداري شهري يحتوي على المؤشرات، الملخصات، الشارتات، الحالات الحرجة، والجدول التشغيلي التفصيلي.</p><div class="mt-5 flex gap-3"><a href="PQ_Monthly_Report.html" target="_blank" class="flex-1 text-center px-4 py-3 rounded-xl btn-primary font-extrabold">فتح الصفحة</a></div></article>
+      <article class="soft-card p-5 flex flex-col"><div class="flex items-start justify-between gap-3"><div class="module-icon">📊</div><span class="inline-flex items-center gap-2 bg-fuchsia-50 text-fuchsia-700 border border-fuchsia-100 rounded-full px-3 py-1 text-xs font-extrabold"><span class="status-dot bg-fuchsia-500"></span>تنفيذي</span></div><h2 class="mt-4 text-xl font-extrabold text-pink-800">Executive Dashboard</h2><p class="mt-3 text-sm leading-7 text-gray-600 flex-grow">لوحة تنفيذية للإدارة العليا تشمل الاتجاهات، أكثر المصادر والفئات، الحالات الحرجة المفتوحة، وأحدث السجلات.</p><div class="mt-5 flex gap-3"><a href="PQ_Executive_Dashboard.html" target="_blank" class="flex-1 text-center px-4 py-3 rounded-xl btn-primary font-extrabold">فتح الصفحة</a></div></article>
+    </section>
+    <section class="soft-card p-6"><h2 class="text-xl font-extrabold text-pink-800 mb-4">تسلسل العمل المقترح</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="p-4 rounded-xl bg-pink-50 border border-pink-100"><div class="font-extrabold">1) فتح فورم الإدخال</div><div class="text-sm text-gray-600 mt-1">تسجيل المشكلة الجديدة وحفظ الصور والبيانات الأساسية.</div></div><div class="p-4 rounded-xl bg-pink-50 border border-pink-100"><div class="font-extrabold">2) مراجعة الحالة من صفحة المتابعة</div><div class="text-sm text-gray-600 mt-1">تحديث التنفيذ، حالة المتابعة، والحل الفني المعتمد.</div></div><div class="p-4 rounded-xl bg-pink-50 border border-pink-100"><div class="font-extrabold">3) استخراج التقرير الشهري</div><div class="text-sm text-gray-600 mt-1">مراجعة ملخص الشهر وطباعة التقرير عند الحاجة.</div></div><div class="p-4 rounded-xl bg-pink-50 border border-pink-100"><div class="font-extrabold">4) متابعة المؤشرات من الـ Dashboard</div><div class="text-sm text-gray-600 mt-1">استخدام الواجهة التنفيذية في العروض والمراجعات الإدارية.</div></div></div></section>
+  </main>
+</body>
+</html>
